@@ -71,6 +71,12 @@ for col in X_train.columns.values: # Iterating over all the common columns in tr
          X_train[col]=le.fit_transform(X_train[col])
          X_test[col]=le.transform(X_test[col])
          
+"""         
+# Add deminsionality reduction
+
+"""      
+
+
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
